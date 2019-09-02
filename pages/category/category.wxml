@@ -1,0 +1,28 @@
+<header title="商品分类"></header>
+<view>
+  这是搜索框
+  <input type="text" />
+</view> 
+
+<view class="cate_main">
+  <view class="cate_list">
+    <block wx:for="{{navlist}}">
+      <view class="cate_list_item {{index==activeIndex?'cate_list_active':''}}" bindtap="changeTap" data-index="{{index}}">
+        {{item.cate_name}}
+      </view>
+    </block>
+  </view>
+  <view class="cate_content">
+    <scroll-view scroll-y="{{true}}" scroll-into-view="{{elId}}" scroll-with-animation="{{true}}" style="height:1000rpx">
+      <view class="cate_content_item" wx:for="{{navlist}}" id="{{'a'+index}}">
+        <view class="cate_content_title"> 
+          ————  {{item.cate_name}}  ————
+        </view>
+        <view class="cate_content_list">
+          <text wx:for="{{item.child}}">{{item.cate_name}}</text>
+        </view>
+      </view>
+      <view style="height:888rpx"></view>
+    </scroll-view> 
+  </view>
+</view>

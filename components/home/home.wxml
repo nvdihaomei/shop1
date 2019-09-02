@@ -1,0 +1,16 @@
+<view class="home">
+  <view class='home_top {{flag?"home_show":""}}'>
+    <navigator url="/pages/index/index" open-type="switchTab" class="iconfont icon-shouye-xianxing">  
+    </navigator>
+    <navigator url="/pages/shopcar/shopcar" open-type="switchTab" class="iconfont icon-caigou-xianxing">  
+    </navigator>
+    <navigator url="/pages/user/user" open-type="switchTab" class="iconfont icon-yonghu1">  
+    </navigator>
+  </view>
+
+  <view class="home_bottom" bindtap="changeFlag">
+    <image src="/images/close.gif" />
+  </view>
+</view>
+
+

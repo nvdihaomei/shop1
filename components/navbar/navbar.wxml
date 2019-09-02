@@ -1,0 +1,12 @@
+<view class="navbar-box">
+
+  <view class="navbar">
+    <view class="logo">
+      <image src="/images/logo.png" mode="aspectFit" />
+    </view>
+    <view class="search">
+      <input type="text" />
+    </view>
+  </view>
+  
+</view>

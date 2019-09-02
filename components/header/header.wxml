@@ -1,0 +1,6 @@
+<view class="header navbar-box">
+  <view class="navbar">
+    <view class="back iconfont icon-xiangzuo" bindtap="back"></view>
+    <view class="title">{{title}}</view>
+  </view>
+</view> 

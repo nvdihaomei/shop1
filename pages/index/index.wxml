@@ -1,0 +1,228 @@
+<!--index.wxml-->
+<navbar></navbar>
+<swiper autoplay="{{true}}" interval="3000" circular="{{true}}">
+    <swiper-item wx:for="{{value}}">
+        <image src="{{item}}" />   
+    </swiper-item>
+</swiper>
+<view class="nav">
+    <view bindtap="gotolist">
+      <image src="/images/nav-1.png"/>
+      <text>列表</text>
+    </view>
+    <view >
+      <image src="/images/nav-2.png"/>
+      <text>列表</text>
+    </view>
+    <view >
+      <image src="/images/nav-3.png"/>
+      <text>列表</text>
+    </view>
+    <view >
+      <image src="/images/nav-4.png"/>
+      <text>列表</text>
+    </view>
+    <view >
+      <image src="/images/nav-5.png"/>
+      <text>列表</text>
+    </view>
+    <view >
+      <image src="/images/nav-6.png"/>
+      <text>列表</text>
+    </view>
+    <view >
+      <image src="/images/nav-7.png"/>
+      <text>列表</text>
+    </view>
+    <view >
+      <image src="/images/nav-8.png"/>
+      <text>列表</text>
+    </view>
+</view>
+<view class='news'>
+    <view class='pictrue'>
+        <image src='/images/news.png'/>
+    </view>
+    <view class='swiperTxt'>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{true}}" interval="2500" duration="500" vertical="true" circular="true" >
+          <swiper-item >
+                <view class='label '>
+                    最新：11111111111111 <text>></text>
+                </view>
+          </swiper-item>
+          <swiper-item >
+                <view class='label '>
+                    最新：2222222222222 <text>></text>
+                </view>
+          </swiper-item>  
+          <swiper-item >
+                <view class='label '>
+                    最新：33333333333333 <text>></text>
+                </view>
+          </swiper-item>
+      </swiper> 
+   </view>
+</view>
+<view class="specialArea">
+    <view class="specLeft">
+      <image src="/images/f.jpg"/>
+      <text class="sizeMax">一起来拼团<text>优惠多多</text></text>
+      <text class="sizeMin"></text>
+    </view>
+    <view class="specRight">
+      <view class="rightTop">
+          <image src="/images/w.jpg"/>
+          <text class="sizeMax">砍价专区 <text>新能源汽车火热销售</text></text>
+      </view>
+      <view class="rightBottom">
+          <image src="/images/er.jpg"/>
+          <text class="sizeMax">砍价活动 <text>呼朋唤友来砍价</text></text>
+      </view>
+    </view>
+</view>
+<view class='title' style="padding:0 40rpx">
+    <view class='text' style="padding:25rpx 0;display: inline-block">
+        <view class=' line1' style="font-size:35rpx;">精品推荐</view>
+        <text style="font-size:30rpx">false</text>
+    </view>
+     <text class="texts" >更多 ></text>
+     <swiper  circular="{{true}}" autoplay="{{true}}" indicator-dots="{{true}}" indicator-color="rgba(0, 0, 0, 0.2)" indicator-active-color="#65a21c" interval="2000">
+        <swiper-item >
+          <image src="/images/pp.jpg" class="slide-image" style="width:92%;height:280rpx;padding-right:30rpx;"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="/images/ll.jpg" class="slide-image" style="width:92%;height:280rpx;padding-right:30rpx;"/>
+        </swiper-item>
+         <swiper-item >
+          <image src="/images/ll.jpg" class="slide-image" style="width:92%;height:280rpx;padding-right:30rpx;"/>
+        </swiper-item>
+    </swiper>
+    <view class="shops">
+      <view class="shop" >
+        <image src="/images/a.jpg"/>
+        <view class="shopRight" >
+          <text style="font-size:34rpx;">无线吸尘器F8 玫瑰金礼盒版</text>
+          <text style="color:red;display:block;margin-top:40rpx">￥0.01 </text>
+          <text style="font-size:30rpx">已售347件</text>
+          <image src="/images/3-002.png" />
+        </view>
+      </view>
+      <view class="shop" >
+        <image src="/images/jj.jpg" />
+        <view class="shopRight" >
+          <text style="font-size:34rpx;">Cesare测试</text>
+          <text style="color:red;display:block;margin-top:40rpx">￥1111 </text>
+          <text style="font-size:30rpx">已售37件</text>
+          <image src="/images/3-002.png" />
+        </view>
+      </view>
+      <view class="shop" >
+        <image src="/images/e.jpg"/>
+        <view class="shopRight" >
+          <text style="font-size:34rpx;">致密加湿器白色</text>
+          <text style="color:red;display:block;margin-top:40rpx">￥999.01 </text>
+          <text style="font-size:30rpx">已售147件</text>
+          <image src="/images/3-002.png" />
+        </view>
+      </view>
+      <view class="shop" >
+        <image src="/images/c.jpg" />
+        <view class="shopRight" >
+          <text style="font-size:34rpx;">智能马桶盖AI</text>
+          <text style="color:red;display:block;margin-top:40rpx">￥0.01 </text>
+          <text style="font-size:30rpx">已售37件</text>
+          <image src="/images/3-002.png" />
+        </view>
+      </view>
+    </view>
+    <view class="goodShop">
+      <image src="/images/a.jpg" style="width:100%;height:240rpx; z-index: 1"/>
+      <view class='goodtext' style="padding:25rpx;color:#fff">
+        <view class='line1' style="font-size:30rpx">热门榜单 <text style="font-size:25rpx;">根据销量，搜索，好评等综合得出 <text style="padding-left:140rpx;font-size:30rpx">更多 ></text> </text></view>
+      </view>
+  </view>
+  <view class="shopOne">
+    <view class="One">
+      <image src="/images/c.jpg"/>
+      <text>无线吸尘器F8...<text style="color:red">￥0.01</text></text>
+    </view>
+     <view class="One">
+      <image src="/images/c.jpg"/>
+      <text>无线吸尘器F8...<text style="color:red">￥0.01</text></text>
+    </view>
+     <view class="One">
+      <image src="/images/c.jpg"/>
+      <text>无线吸尘器F8...<text style="color:red">￥0.01</text></text>
+    </view>
+  </view>
+  <view class='shopTwo ' >
+    <view class='text' style="padding:25rpx 0;display: inline-block">
+        <view class=' line1' style="font-size:35rpx;">首发新品</view>
+        <text style="font-size:30rpx">false</text>
+    </view>
+    <text class="texts" >更多 ></text>
+    <scroll-view scroll-x="{{true}}">
+    <view style='display:flex; width:1500rpx' class="Two">
+    <view style='flex:1'>
+      <image src='/images/c.jpg' />
+      <text>1111</text>
+    </view>
+    <view style='flex:1'>
+      <image src='/images/d.jpg' />
+      <text>1111</text>
+    </view>
+    <view style='flex:1'>
+      <image src='/images/er.jpg' />
+      <text>1111</text>
+    </view>
+    <view style='flex:1'>
+      <image src='/images/f.jpg' />
+      <text>1111</text>
+    </view>
+    <view style='flex:1'>
+      <image src='/images/i.png'/>
+      <text>1111</text>
+    </view>
+    </view> 
+    </scroll-view>
+  </view>
+  <view class="shopThree">
+    <view class='text' style="padding:25rpx 0;display: inline-block">
+        <view class=' line1' style="font-size:35rpx;">促销单品</view>
+        <text style="font-size:30rpx">false</text>
+    </view>
+    <text class="texts" >更多 ></text>
+      <view class="shops">
+      <view class="shop" >
+        <image src="/images/c.jpg"/>
+        <view class="shopRight" >
+          <text style="font-size:34rpx;">无线吸尘器F8 玫瑰金礼盒版</text>
+          <text  class="BgRed">促销价：￥0.01 </text>
+          <text style="font-size:30rpx">日常价：￥0.01</text>
+          <text>仅剩：999件</text>
+        </view>
+      </view>
+      <view class="shop" >
+        <image src="/images/a.jpg" />
+        <view class="shopRight" >
+          <text style="font-size:34rpx;">Cesare测试</text>
+          <text  class="BgRed">促销价：￥0.01 </text>
+          <text style="font-size:30rpx">日常价：￥0.01</text>
+          <text >仅剩：999件</text>
+        </view>
+      </view>
+      <view class="shop" >
+        <image src="/images/jj.jpg"/>
+        <view class="shopRight" >
+          <text style="font-size:34rpx;">致密加湿器白色</text>
+          <text  class="BgRed">促销价：￥0.01</text>
+          <text style="font-size:30rpx">日常价：￥0.01</text>
+          <text>仅剩：999件</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+

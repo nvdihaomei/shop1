@@ -1,0 +1,32 @@
+.cate_main {
+  display: flex;
+}
+.cate_list {
+  width: 180rpx;
+  
+}
+.cate_list_item {
+  background:#eee;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.cate_list_active {
+  background:none;
+  color: red;
+  border-left: 1px solid red;
+}
+
+.cate_content {
+  flex: 1;
+  padding: 0 30rpx;
+}
+
+.cate_content_title {
+  text-align: center
+}
+.cate_content_list{
+  min-height: 200rpx;
+}
+
+

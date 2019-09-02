@@ -1,0 +1,21 @@
+@import "/font/iconfont.wxss";
+
+.navbar-box {
+  padding:0 15rpx;
+  padding-top: 60rpx;
+}
+.navbar {
+  display: flex;
+  height: 80rpx;
+  align-items: center;
+}
+
+.header .back {
+  width: 100rpx;
+}
+.header .title {
+  width: 500rpx;
+  text-align: center;
+  font-weight: bold;
+  font-family: "微软雅黑"
+}
